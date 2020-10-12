@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<title>Joanna-Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Inconsolata", sans-serif}
+h2{font-size: 40px}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("img/mee.png");
+  min-height: 100%;
+}
+.a{
+  text-decoration: none;
+}
+.a hover{
+  text-decoration: aqua;
+}
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px ;
+}  
+</style>
+<body>
+
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-greyscale w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-text-pink w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-text-pink w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#UX" class="w3-bar-item w3-button w3-text-grey w3-hover-text-pink w3-hover-black" onclick="closeNav()">UX Design</a>
+    <a href="#Info" class="w3-bar-item w3-button w3-text-grey w3-hover-text-pink w3-hover-black" onclick="closeNav()">Data Visuals</a>
+    <a href="#work" class="w3-bar-item w3-button w3-text-grey w3-hover-text-pink w3-hover-black" onclick="closeNav()">Work Experience</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-text-pink w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo w3-hover-text-pink"><b>JOANNA NAOMI MINOTT</b></h1>
+    <p>Designer and Developer.</p>
+    <img src="img/mee.png" class="w3-image w3-greyscale w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="img/mee.png" class="w3-image w3-greyscale w3-hide-large w3-hide-medium w3-round "  width="1000" height="1333">
+    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+     <a href="img/Joanna_Minott_resume.pdf">
+      <i class="fa fa-download"></i> Download Resume
+    </a></button>
+  </header>
+ <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-30" id="about">
+    <h2>ABOUT ME</h2>
+    <hr class="w3-opacity">
+    <p>
+      I'm a Junior at the University of Miami with a passion for full-stack software development, web design, UX design, and Data infographics. I'm an highly motivated individual with a drive to expand my knowledge and hone my skills in the art of technology. My ideal work environment would combine collaboration, creativity, and leadership to enhance the growth and promote optimal productivity for their employees. Currently, I am seeking an ideal internship that utilizes those skills to further my exposure as a software developer and web designer. While not implementing alogrithims or designing, I enjoy my time as a freelance artist, a freshman peer mentor and  being the Public Relations Chair of the Delta Lambda Chapter of Phi Sigma Pi.
+    </p>
+    <h2 class="w3-text-gret">MY SKILLS</h2>
+    <p class="w3-wide">Java Object Oriented Programming</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-black" style="width:85%">85%</div>
+    </div>
+    
+    <p class="w3-wide">HTML & CSS Progamming</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-black" style="width:85%">85%</div>
+    </div>
+
+    <p class="w3-wide">Adobe Illustrator</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-black" style="width:90%">90%</div>
+    </div>
+
+    <p class="w3-wide">Adobe Photoshop</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-black" style="width:75%">75%</div>
+    </div>
+
+    <p class="w3-wide">Adobe XD</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-black" style="width:75%">75%</div>
+    </div>
+    <p class="w3-wide">UX/UI Design</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-black" style="width:80%">80%</div>
+    </div>
+    
+    <p class="w3-wide">Microsoft Excel </p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-black" style="width:60%">60%</div>
+
+
+     
+    </div><br>
+
+    
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <a href="img/Joanna_Minott_resume.pdf">
+      <i class="fa fa-download"></i> Download Resume
+    </a></button>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+
+  <div class="w3-padding-32 w3-content" id="UX">
+    <h2 class="w3-text-grey w3-padding-16">MY PORTFOLIO</h2>
+    <hr class="w3-opacity">
+    <h3 class="w3-padding-16">UX Design</h3>
+    <div class="a">
+    <h4 class="w3-text-grey"><a href="https://jnm128.myportfolio.com/leed-360"> Check out the Leed 360 Project!</a></h4>
+</div>
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-full">
+        <img src="img/image2.png" style="width:100%">
+        <img src="img/image3.png" style="width:100%">
+        <img src="img/image1.png" style="width:100%">
+      </div>
+
+      <div class="w3-full">
+        <img src="img/web1.png" style="width:100%">
+        <img src="img/web2.png" style="width:100%">
+      </div>
+
+      <div class="w3-float-container">
+        
+        <div class="float-child">
+        <img src="img/mob1.png" style="width:100%">
+      </div>
+      <div class="float-child">
+        <img src="img/mob2.png" style="width:100%">
+    </div>
+        </div>
+      </div>
+    <!-- End photo grid -->
+    </div>
+    <div class="w3-content w3-justify w3-text-black w3-padding-30" id="Info"></div>
+    <h3 class="w3-padding-14">Data Visualizations</h3>
+    <hr class="w3-opacity">
+    <p>check out these tabloid data infographics about the disparties of diabetes and Covid-19 in the United States!</p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-full">
+          <img src="img/info1.jpg" style="width:100%">
+          <img src="img/info2.jpg" style="width:100%">
+          
+        </div>
+        <div class="w3-content w3-justify w3-text-black w3-padding-30" id="work"></div>
+        <h2 class="w3-text-grey w3-padding-16">MY WORK EXPERIENCE</h2>
+        <hr class="w3-opacity">
+        <div class="work">
+            <article class="Work2">
+             <h3>University of Miami Informational Technologies Department</h3>                         
+            <h4>Student Assistant</h4> 
+            <h4>January 2019- present</h4>
+            <ul class="ecm">
+                    <li>Efficiently completed assigned tasks using the software OnBase Unity Client</li>
+                    <li>use the document retrieval software to transfer and manage information documented on paper to a digital database </li>
+                    <li> create and modify excel spreadsheets to correct mistakes or make changes to department database</li>
+                    <li>create University of Miami IT Department offical documentation for various user guides derived from Hyland Onbase Software  </li>
+            </ul>
+
+            <h3>University of Miami Housing and Residental Life</h3>                         
+            <h4>First Year Fellow</h4> 
+            <h4>August 2020- present</h4>
+            <ul class="fyf">
+                    <li>Introduce students to campus resources that supports academic excellence</li>
+                    <li>Connect students to programs and events that enhance their academic experience</li>
+                    <li>Support and promote student professional and personal growth as a Peer Mentor</li>
+                    <li>encourage students to connect to faculity to further their understanding of their courses and to explore their interest</li>
+            </ul>
+            <h3>University of Miami Topple Career Center</h3>                         
+            <h4>2020 Summer Skills Advantage Series Participant</h4> 
+            <h4>July 2020 - August 2020</h4>
+            <ul class="toppel">
+                    <li>completed 110 hours of study in Computer Coding Track by using CodeAcademy.com</li>
+                    <li>learn the fundementals of Python, including different data structures,Function Arguments and Classes </li>
+                    <li>Expand my knowledge on html and CSS by practicing implementing html mock web pages and create attractive layouts using CSS</li>
+                    <li>learn programming fundamentals and basic object-oriented concepts in JavaScript</li>
+                    <li>Completed 25 hours of Java lessons to further my understanding of object oriented programming, functions, Inheritance and polymorphism </li>
+                    <li><div class="a">
+                        <h4 class="w3-text-grey"><a href="img/Joanna_Minott_SSAS.pdf"> Offical certificate of completion</a></h4>
+                    </div>
+                  </li>
+            </ul>
+            <h3> Phi Sigma Pi National Gender Inclusive Fraternity</h3>   
+                <h4> Public Relations Chair</h4>
+                 <h4> May 2020-present</h4>           
+                   <ul class="psp">
+                            <li>periodically update social media Page with instagram Stories and Post to highlight fraterny brothers</li>
+                            <li>promote various events hosted by fraternity through our Instagram page</li>
+                            <li>design and distribute fliers to promote various events hosted by the fraternity</li>
+                        </ul>
+            
+            
+                <h3> Phi Sigma Pi National Gender Inclusive Fraternity</h3>   
+                <h4> Executive Board Secretary</h4>
+                 <h4>January 2019- May 2020</h4>           
+                   <ul class="psp">
+                            <li>successfully work alongside the president to remind and provide them with information about the brothers under the confidentiality code of honor, Sub Rosa.</li>
+                            <li>Create excel spread worksheet and kept track of attendance of brothers.</li>
+                            <li>record and send minutes to fraternity via E-mail.</li>
+                        </ul>
+            
+                
+            
+            </article>
+        
+
+
+
+
+
+
+
+  <!-- End Portfolio Section -->
+  </div>
+
+ 
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>CONTACT ME</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Miami, US</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 631-796-3682</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: jnm128@miami.edu</p>
+    </div>
+    
+    <!-- Image of location/map -->
+    <img src="img/aboutme.jpg" class="w3-image w3-greyscale " style="width:100%;margin:32px 0">
+   
+    <p>Lets get in touch. Send me a message:</p>
+    <form class="contact-form" action="contact-form.php" method="post">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" required name:="Submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+   
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
